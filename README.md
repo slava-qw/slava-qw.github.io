@@ -1,202 +1,66 @@
-# Viacheslav Iablochnikov — GitHub Pages personal website
+# Viacheslav Iablochnikov — academic website
 
-This repository is a **static GitHub Pages site**. It is designed to be easy to understand and easy to deploy:
+Static website for `slava-qw.github.io`, with no framework or build step.
+Updated November 2026.
 
-- `index.html` = page structure and content
-- `assets/css/styles.css` = visual style, spacing, colors, layout, responsive behavior
-- `assets/js/main.js` = smooth-scroll navigation, mobile menu, pause-when-offscreen video playback
-- `assets/media/` = all local images and video used by the site
-- `assets/docs/` = CV PDF
-- `.nojekyll` = makes GitHub Pages serve the site as plain static files
+## Preview locally
 
-## 1) Fastest way to publish the site
+From this directory:
 
-### Option A — publish as your main personal site
-If your GitHub username is `slava-qw`, create a repository named:
-
-```text
-slava-qw.github.io
+```sh
+python -m http.server 8000 --bind 127.0.0.1
 ```
 
-Then upload **everything in this folder** to the root of that repository.
+Open `http://127.0.0.1:8000`. Opening `index.html` directly also works for the
+static content; a local server gives the most accurate video and PDF preview.
 
-### Option B — publish as a project site
-If you want to test first in a different repository, create any repository name such as:
+## Files
 
-```text
-personal-website
-```
+- `index.html`: biography, news, six compact research cards with expandable
+  abstracts/results, earlier work, and background.
+- `blog.html`: separate blog with clearly labelled planned collections; no posts yet.
+- `assets/css/styles.css`: typography, responsive layout, comparison galleries.
+- `assets/js/main.js`: accessible mobile navigation and visibility-aware video
+  playback, including support for reduced-motion preferences.
+- `assets/media/research/`: WebP exports of existing research results.
+- `assets/docs/`: the latest supplied CV and six-page project portfolio.
+- `.nojekyll`: plain static serving on GitHub Pages.
+- `data/`: ignored personal working material; not website content.
 
-Then you can publish from the root or from `/docs` in GitHub Pages settings.
+## Updating research
 
-For a personal main domain, Option A is the right one.
+Each current project has a stable HTML anchor: `r3-cache`, `splinecache`,
+`kinemask`, `beyond-hands`, `layoutfusion`, or `physalign`.
+Edit its status, title, author list, contribution and evidence together.
+Keep accepted, submitted, under-review and ongoing statuses distinct.
+Future world-model directions belong in the biography;
+they are not outcomes of the existing projects.
 
-## 2) Local preview before uploading
+Comparison labels are HTML. The R³-Cache gallery uses the final target-10
+Qwen-Image examples and shared prompt/noise within each row. Native sampling
+has 10 steps; the full reference has 50. Do not relabel these images as a
+different experimental configuration. Preserve complete frames and their
+aspect ratios. On narrow screens, comparisons scroll horizontally.
 
-### Simple local preview
-From inside this folder run:
+The CV download is an unchanged copy of the latest supplied document. Its
+R³-Cache entry still says "targeting"; the website and portfolio use the newer
+applicant-confirmed "Submitted to CVPR 2027" status. Reconcile the CV separately
+when updating the CV if complete consistency is needed.
 
-```bash
-python3 -m http.server 8000
-```
+## Revision records
 
-Then open:
+Local source analysis, the original-file backup, asset provenance and browser
+screenshots/checks are outside this repository at:
 
-```text
-http://localhost:8000
-```
+`D:/beyound_hands/output/website_review_20261115/`
 
-This is better than double-clicking `index.html`, because a local server more closely matches GitHub Pages behavior.
+Research-statement application letters and private review material are not
+bundled into the site.
 
-## 3) Upload with Git
+## Compact layout revision
 
-If you want to publish from the terminal:
-
-```bash
-cd slava-qw-github-pages-site
-
-git init
-git add .
-git commit -m "Initial personal website"
-git branch -M main
-git remote add origin git@github.com:slava-qw/slava-qw.github.io.git
-git push -u origin main
-```
-
-If you prefer HTTPS instead of SSH, use:
-
-```bash
-git remote add origin https://github.com/slava-qw/slava-qw.github.io.git
-```
-
-## 4) Enable GitHub Pages
-
-After the files are on GitHub:
-
-1. Open the repository.
-2. Go to **Settings**.
-3. Open **Pages** in the sidebar.
-4. Under **Build and deployment**, choose **Deploy from a branch**.
-5. Select branch **main**.
-6. Select folder **/(root)**.
-7. Save.
-
-Your site should appear at:
-
-```text
-https://slava-qw.github.io/
-```
-
-## 5) Where to edit the content
-
-### Main text content
-Open:
-
-```text
-index.html
-```
-
-The page is organized by sections with clear IDs:
-
-- `#about`
-- `#throughline`
-- `#news`
-- `#projects`
-- `#experience`
-- `#publications`
-- `#awards`
-- `#contact`
-
-### Styling
-Open:
-
-```text
-assets/css/styles.css
-```
-
-The top of the file contains the main color variables:
-
-```css
-:root {
-  --accent: #1993f0;
-  --accent-2: #19a9f0;
-}
-```
-
-Change those two first if you want to shift the color scheme.
-
-### JavaScript behavior
-Open:
-
-```text
-assets/js/main.js
-```
-
-This file controls:
-
-- Light / dark / auto theme buttons
-- Mobile navigation menu
-- Active section highlighting while scrolling
-
-## 6) How to replace or add content later
-
-### Add a new project card
-Copy one of the existing `<article class="project-card"> ... </article>` blocks in `index.html` and update:
-
-- project title
-- summary paragraph
-- bullet points
-- links
-- media file paths in `assets/media/`
-
-### Replace the CV PDF
-Overwrite:
-
-```text
-assets/docs/CV_Viacheslav_Iablochnikov_research.pdf
-```
-
-No HTML changes are needed if you keep the same file name.
-
-### Replace images or video
-Put the new files into:
-
-```text
-assets/media/
-```
-
-Then update the file names in `index.html`.
-
-## 7) If you want a custom domain later
-
-Typical flow:
-
-1. Buy a domain from a registrar.
-2. In GitHub repository **Settings → Pages**, add the custom domain.
-3. Configure DNS at your domain provider.
-4. Wait for DNS to propagate.
-5. Turn on HTTPS after it becomes available.
-
-## 8) Recommended next improvements
-
-Good next upgrades after first launch:
-
-- add Google Scholar link
-- add a profile photo if you want one
-- add a dedicated “Publications” page later
-- add project-specific subpages under folders like `/projects/kinemask/`
-- add analytics only after the site is stable
-- add a custom domain once the default `github.io` version is working
-
-## 9) Notes about design
-
-The layout intentionally follows a classic academic homepage pattern:
-
-- compact top navigation
-- strong hero section with bio and links
-- recent news / milestones
-- selected projects
-- publications and talks
-- awards, skills, and contact
-
-The code is original and written specifically for your materials, while taking inspiration from the overall structure and visual minimalism of the reference sites you shared.
+Small cover images accompany each research card. Click “Details & results” or
+the cover to open its abstract, contribution, and full comparison figures.
+The native disclosure works with keyboard navigation and without JavaScript.
+The red biography notice advertises a search for summer 2027 research internships.
+Blog collections are explicit placeholders, with no invented posts or dates.

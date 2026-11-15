@@ -1,422 +1,125 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Viacheslav Iablochnikov</title>
-  <meta name="description" content="Personal academic webpage of Viacheslav Iablochnikov — M.Sc. Computer Vision student at MBZUAI, working on generative models for image/video, vision-language models, and scientific ML." />
-  <link rel="icon" type="image/svg+xml" href="assets/media/favicon.svg" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,600;1,400&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/css/styles.css" />
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Viacheslav Iablochnikov</title>
+<meta content="Viacheslav Iablochnikov, M.Sc. Computer Vision at MBZUAI. Research on structured and physically grounded visual generation, efficient diffusion inference, and persistent world models." name="description"/>
+<link href="assets/media/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,600;1,400&amp;family=Source+Sans+3:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="assets/css/styles.css" rel="stylesheet"/>
+<script defer="" src="assets/js/main.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="topnav">
+<nav aria-label="Main navigation" class="nav-inner">
+<a class="nav-name" href="#top">Viacheslav Iablochnikov</a>
+<div class="nav-links"><a href="#about">About</a><a href="#news">News</a><a href="#projects">Research</a><a href="#background">Background</a><a href="blog.html">Blog</a></div>
+<button aria-controls="mobileMenu" aria-expanded="false" aria-label="Open navigation" class="burger" id="burger">☰</button>
+</nav>
+<nav aria-label="Mobile navigation" class="mobile-menu" hidden="" id="mobileMenu"><a href="#about">About</a><a href="#news">News</a><a href="#projects">Research</a><a href="#background">Background</a><a href="blog.html">Blog</a></nav>
+</header>
+<main class="page-wrap" id="main">
+<div id="top"></div>
+<section aria-labelledby="profile-name" class="profile-section" id="about">
+<aside class="profile-left">
+<img alt="Viacheslav Iablochnikov" class="avatar-img" height="160" src="assets/media/avatar_v3.jpg" width="160"/>
+<h1 class="profile-name" id="profile-name">Viacheslav<br/>Iablochnikov</h1>
+<p class="profile-title">M.Sc. in Computer Vision</p>
+<p class="profile-affil"><a href="https://mbzuai.ac.ae/">MBZUAI</a> · Abu Dhabi, UAE</p>
+<p class="profile-affil">Expected graduation: June 2027</p>
+<p class="contact-line"><a href="mailto:slavawertlon@gmail.com">slavawertlon@gmail.com</a></p>
+<div class="social-row"><a href="https://github.com/slava-qw">GitHub</a><span aria-hidden="true">/</span><a href="https://www.linkedin.com/in/viacheslav-iablochnikov-52a39a278/">LinkedIn</a></div>
+<div class="document-links"><a class="cv-btn" href="assets/docs/CV_Viacheslav_Iablochnikov_research.pdf">CV <span class="file-type">PDF</span></a><a class="cv-btn secondary" href="assets/docs/Portfolio_Viacheslav_Iablochnikov.pdf">Portfolio <span class="file-type">PDF</span></a></div>
+<div class="affil-logos"><img alt="MBZUAI" height="36" src="assets/media/mbzuai_logo_v2.png" width="130"/><img alt="HSE University" height="36" src="assets/media/hse_logo_full.png" width="130"/></div>
+</aside>
+<div class="profile-right">
+<h2 class="section-title">Biography</h2>
+<p>I am an M.Sc. student in Computer Vision at <a href="https://mbzuai.ac.ae/">MBZUAI</a>, supervised by <a href="https://mbzuai.ac.ae/study/faculty/ivan-laptev/">Prof. Ivan Laptev</a> and co-supervised by <a href="https://fabvio.github.io/">Dr. Fabio Pizzati</a>. I work on <strong>visual generative models</strong>, with a focus on <strong>structural and physical consistency</strong> and <strong>efficient inference</strong>.</p>
+<p>My background is in physics: I received my B.Sc. from HSE University, where I used diffusion models for astronomical image differencing and transient detection. I am interested in how explicit structure—geometry, object motion, and scene layout—can make generation more controllable and its predictions easier to check.</p>
+<p>My current projects connect images and video with hands, objects, and layouts, and develop training-free methods for faster diffusion sampling. I pursue this work with colleagues at MBZUAI, Westlake University's AGI Lab, and the University of Hong Kong.</p>
+<p>Looking ahead, I want to bring these directions together in <strong>generative world models</strong> that remain coherent as people and agents interact with them: remembering changes to a scene, respecting its structure, and using computation efficiently.</p>
+<p class="internship-notice">I am looking for <strong>research internship opportunities for summer 2027</strong> in visual generation, world models, and efficient inference. <a href="mailto:slavawertlon@gmail.com">Please get in touch.</a></p>
+</div>
+</section>
 
-  <!-- NAV -->
-  <nav class="topnav">
-    <div class="nav-inner">
-      <a class="nav-name" href="#top">Viacheslav Iablochnikov</a>
-      <div class="nav-links">
-        <a href="#about">About</a>
-        <a href="#news">News</a>
-        <a href="#publications">Publications</a>
-        <a href="#projects">Projects</a>
-        <a href="#awards">Honors</a>
-      </div>
-      <button class="burger" id="burger" aria-label="Open menu">&#9776;</button>
-    </div>
-    <div class="mobile-menu" id="mobileMenu">
-      <a href="#about">About</a>
-      <a href="#news">News</a>
-      <a href="#publications">Publications</a>
-      <a href="#projects">Projects</a>
-      <a href="#awards">Honors</a>
-    </div>
-  </nav>
-
-  <div class="page-wrap" id="top">
-
-    <!-- PROFILE -->
-    <section id="about" class="profile-section">
-      <div class="profile-left">
-        <!-- Replace the SVG block below with <img src="assets/media/avatar.jpg" class="avatar-img" alt="Viacheslav Iablochnikov"> once you upload a photo -->
-        <div class="avatar-placeholder" aria-label="Profile photo — replace with your photo">
-          <!-- <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-            <defs>
-              <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stop-color="#2d6a9f"/>
-                <stop offset="100%" stop-color="#1a4572"/>
-              </linearGradient>
-            </defs>
-            <rect width="200" height="200" fill="url(#g)"/>
-            <text x="100" y="120" text-anchor="middle" font-family="Georgia,serif" font-size="72" fill="rgba(255,255,255,0.9)">VI</text>
-          </svg> -->
-          <img src="assets/media/avatar_v3.jpg" class="avatar-img" alt="Viacheslav Iablochnikov">
-        </div>
-
-        <h1 class="profile-name">Viacheslav<br>Iablochnikov</h1>
-        <p class="profile-title">M.Sc. Student in Computer Vision</p>
-        <p class="profile-affil"><a href="https://mbzuai.ac.ae/" target="_blank" rel="noreferrer">MBZUAI</a>, Abu Dhabi, UAE</p>
-        <p class="profile-affil">Supervisor: <a href="https://mbzuai.ac.ae/study/faculty/ivan-laptev/" target="_blank" rel="noreferrer">Ivan Laptev</a></p>
-
-        <p class="contact-line">✉ <a href="mailto:slavawertlon@gmail.com">slavawertlon@gmail.com</a></p>
-
-        <div class="social-row">
-          <a href="https://github.com/slava-qw" target="_blank" rel="noreferrer" class="social-link">GitHub</a>
-          <span class="social-sep">/</span>
-          <a href="https://www.linkedin.com/in/viacheslav-iablochnikov-52a39a278/" target="_blank" rel="noreferrer" class="social-link">LinkedIn</a>
-          <!-- <span class="social-sep">/</span> -->
-          <!-- <a href="https://arxiv.org/abs/2412.01725" target="_blank" rel="noreferrer" class="social-link">arXiv</a> -->
-        </div>
-
-        <a class="cv-btn" href="assets/docs/CV_Viacheslav_Iablochnikov_research.pdf" target="_blank" rel="noreferrer">CV [PDF]</a>
-
-        <div class="affil-logos">
-          <img src="assets/media/mbzuai_logo_v2.png" alt="MBZUAI" />
-          <img src="assets/media/hse_logo_full.png" alt="HSE University" />
-        </div>
-      </div>
-
-      <div class="profile-right">
-        <h2 class="section-title">Biography</h2>
-        <p>
-          I am an M.Sc. student in Computer Vision at
-          <a href="https://mbzuai.ac.ae/" target="_blank" rel="noreferrer">MBZUAI</a>, supervised by
-          <a href="https://mbzuai.ac.ae/study/faculty/ivan-laptev/" target="_blank" rel="noreferrer">Prof. Ivan Laptev</a>.
-          My research interests are <strong>generative models for image and video</strong>,
-          <strong>vision–language models</strong>, and <strong>scientific machine learning</strong>.
-        </p>
-        <p>
-          My research at MBZUAI is driven by the goal of evolving generative systems into robust, physically
-          grounded "world models". To advance this vision, I developed KineMask,
-          a framework for controllable rigid-body interactions co-supervised by
-          <a href="https://fabvio.github.io/" target="_blank" rel="noreferrer">Fabio Pizzati</a>
-          — <strong>accepted to ECCV 2026</strong>. Building on this foundation, I am now investigating dual
-          diffusion generation with 2D/3D conditioning to improve overall visual quality and ensure correct
-          object presence via layout generation. I am also profiling and adapting pretrained DiT/MMDiT diffusion
-          transformers to reduced dimensionality via caching, with
-          <a href="https://sites.google.com/view/senmaoli" target="_blank" rel="noreferrer">Senmao Li</a> (PhD)
-          under <a href="https://mbzuai.ac.ae/study/faculty/fahad-khan/" target="_blank" rel="noreferrer">Fahad Khan</a>
-          (targeting <strong>CVPR'27</strong>).
-        </p>
-        <p>
-          In parallel, I collaborate on efficient and physically grounded generative modeling with groups outside
-          MBZUAI: with <a href="https://icoz69.github.io/" target="_blank" rel="noreferrer">Chi Zhang</a>'s AGI Lab
-          at <a href="https://westlake.edu.cn/" target="_blank" rel="noreferrer">Westlake University</a> on
-          training-free acceleration of image/video diffusion via spline curves and conditional interpolants
-          (targeting <strong>ICLR'27</strong>); and with
-          <a href="https://andrewluo.net/" target="_blank" rel="noreferrer">Andrew Luo</a> at the
-          University of Hong Kong on physics-aware, inference-time reward guidance for video diffusion using
-          pretrained world models such as V-JEPA&nbsp;2.1 (targeting <strong>CVPR'27</strong>).
-        </p>
-        <p>
-          Previously I interned at <a href="https://issai.nu.edu.kz/" target="_blank" rel="noreferrer">ISSAI</a>
-          (Nazarbayev University, culturally faithful text-to-image generation),
-          the <a href="https://airi.net/" target="_blank" rel="noreferrer">AIRI &amp; HSE GenAI Lab</a>
-          (face/hair swapping with GANs), and
-          <a href="https://vk.company/" target="_blank" rel="noreferrer">VK Company</a>
-          (adversarial attacks on multimodal models). I received my B.Sc. in Physics
-          (GPA 8.33/10) from
-          <a href="https://www.hse.ru/en/" target="_blank" rel="noreferrer">HSE University</a>, Russia,
-          with a thesis on diffusion models for astronomical image differencing.
-        </p>
-        <p style="color: red;"><strong>I am open to research collaborations and internship positions. Feel free to reach out!</strong></p>
-
-        <div class="kw-row">
-          <span class="kw">Generative Models</span>
-          <span class="kw">Image/Video Diffusion</span>
-          <span class="kw">World models</span>
-          <span class="kw">VLMs</span>
-          <span class="kw">Scientific ML</span>
-          <span class="kw">Efficient Inference</span>
-        </div>
-      </div>
-    </section>
-
-    <!-- NEWS -->
-    <section id="news" class="content-section">
-      <h2 class="section-title">News</h2>
-      <div class="news-list">
-        <div class="news-item"><span class="nd">Sep 2026</span><span><em>Learning to Generate Rigid Body Interactions with Video Diffusion Models</em> (KineMask) — <strong>accepted to ECCV 2026</strong> (Malmö, Sweden).</span></div>
-        <div class="news-item"><span class="nd">Jul 2026</span><span>Attended the ELLIS AutoML Summer School (Dortmund) and UC Berkeley DL4Sci Summer School (top 30% acceptance).</span></div>
-        <div class="news-item"><span class="nd">Jun 2026</span><span>Started research internship at the AGI Lab, Westlake University, on training-free acceleration of diffusion/flow models.</span></div>
-        <div class="news-item"><span class="nd">May 2026</span><span>Started a research collaboration with the University of Hong Kong on physics-aware, inference-time-guided video diffusion.</span></div>
-        <div class="news-item"><span class="nd">Sep 2025</span><span>Started M.Sc. at MBZUAI, working on physically informed video diffusion (KineMask) and dual diffusion conditional generation.</span></div>
-        <div class="news-item"><span class="nd">Aug 2025</span><span>Concluded internship at ISSAI. Lumina full fine-tuning raised the multi-concept Gemini score from 53.60 → <strong>88.29</strong> (+65% relative).</span></div>
-        <div class="news-item"><span class="nd">2025</span><span>🏆 Prize-winner, Deep Learning Olympiad at <strong>Skoltech</strong> (top 3 / ~1000 participants).</span></div>
-        <div class="news-item"><span class="nd">2025</span><span>Received competitive MBZUAI M.Sc. scholarship (2025–2027).</span></div>
-        <div class="news-item"><span class="nd">Jan 2025</span><span>Started a research collaboration with Fahad Khan and Senmao Li on training-free DiT/MMDiT acceleration.</span></div>
-        <div class="news-item"><span class="nd">Dec 2024</span><span>Preprint <em>Attacks on Multimodal Models</em> released on arXiv. Presented at AIRI Summer School 2024 (top 50 / 1100).</span></div>
-        <div class="news-item"><span class="nd">2024</span><span>🏆 Prize-winner, Deep Learning Olympiad at <strong>MIPT</strong> (top 10 / 300).</span></div>
-        <div class="news-item"><span class="nd">2023–24</span><span>Teaching assistant for <em>Algorithms &amp; DS</em> and <em>Deep Learning</em> at HSE University.</span></div>
-      </div>
-    </section>
-
-    <!-- PUBLICATIONS -->
-    <section id="publications" class="content-section">
-      <h2 class="section-title">Publications &amp; Preprints</h2>
-
-      <article class="paper-card">
-        <div class="paper-thumb">
-          <img src="assets/media/kinemask_carrousel_milk_poster.png" alt="KineMask" loading="lazy"/>
-        </div>
-        <div class="paper-info">
-          <p class="paper-title">Learning to Generate Rigid Body Interactions with Video Diffusion Models</p>
-          <p class="paper-authors">David Romero, Ariana Bermudez, <u>Viacheslav Iablochnikov</u>, Hao Li, Fabio Pizzati, Ivan Laptev</p>
-          <p class="paper-venue">Accepted to <strong>ECCV 2026</strong> · co-first author</p>
-          <div class="plinks"><a href="https://daromog.github.io/KineMask/" target="_blank" rel="noreferrer">[Project]</a> <a href="https://arxiv.org/abs/2510.02284" target="_blank" rel="noreferrer">[arXiv]</a></div>
-        </div>
-      </article>
-
-      <article class="paper-card">
-        <div class="paper-thumb"><img src="assets/media/adversarial_attacks_example_v2.png" alt="Adversarial attacks" loading="lazy"/></div>
-        <div class="paper-info">
-          <p class="paper-title">Attacks on Multimodal Models</p>
-          <p class="paper-authors"><u>V. Iablochnikov</u>, A. Rogachev</p>
-          <p class="paper-venue">arXiv:2412.01725</p>
-          <p class="paper-note">Poster at AIRI Summer School 2024 (top 50 / 1100).</p>
-          <div class="plinks"><a href="https://arxiv.org/abs/2412.01725" target="_blank" rel="noreferrer">[arXiv]</a></div>
-        </div>
-      </article>
-
-      <article class="paper-card">
-        <div class="paper-thumb"><img src="assets/media/dipf.png" alt="Categorical IPF" loading="lazy"/></div>
-        <div class="paper-info">
-          <p class="paper-title">Categorical Iterative Proportional Fitting via Discrete Diffusion Models</p>
-          <p class="paper-authors">Nikita Ligostaev, Vladimir Latypov, <u>Viacheslav Iablochnikov</u>, Maria Nesterova, Ramil Khafizov, Sergei Kholkin, Alexander Korotin</p>
-          <!-- <p class="paper-venue">Preprint</p> -->
-          <div class="plinks"><a href="https://box.skoltech.ru/index.php/s/LEeQhaRW6GYYuAa" target="_blank" rel="noreferrer">[Preprint]</a></div>
-        </div>
-      </article>
-    </section>
-
-    <!-- PROJECTS -->
-    <section id="projects" class="content-section">
-      <h2 class="section-title">Research Projects &amp; Experience</h2>
-
-      <h3 class="proj-group-title">Current Research</h3>
-
-      <!-- Westlake spline acceleration -->
-      <article class="proj-row">
-        <div class="proj-media">
-          <img src="assets/media/spline_sampling.jpg" alt="Spline / conditional-interpolant sampling" loading="lazy"/>
-        </div>
-        <div class="proj-details">
-          <p class="proj-tag">Westlake University, AGI Lab · Jun 2026 – Present</p>
-          <h3>Spline-Based Cached Sampling for Diffusion &amp; Flow Models</h3>
-          <p>Research internship advised by <a href="https://icoz69.github.io/" target="_blank" rel="noreferrer">Chi Zhang</a>. Derived a theoretical framework based on spline curves and conditional interpolants to reconstruct intermediate velocities from fewer model evaluations, reducing sampling cost while preserving prompt alignment and sample quality. Developing and evaluating the approach on Qwen-based text-to-image models — targeting <strong>ICLR 2027</strong>.</p>
-        </div>
-      </article>
-
-      <!-- HKU physics-aware guidance -->
-      <article class="proj-row">
-        <div class="proj-media">
-          <img src="assets/media/vjepa_world_model.png" alt="V-JEPA world model reward guidance" loading="lazy"/>
-        </div>
-        <div class="proj-details">
-          <p class="proj-tag">University of Hong Kong · May 2026 – Present</p>
-          <h3>Physics-Aware, Inference-Time Guidance for Video Diffusion</h3>
-          <p>Research collaboration advised by <a href="https://andrewluo.net/" target="_blank" rel="noreferrer">Andrew Luo</a>. Adapting inference-time reward-alignment algorithms that use pretrained world models (e.g., <strong>V-JEPA 2.1</strong>) as learned evaluators of physical plausibility, steering pretrained video diffusion models toward more physically consistent dynamics without additional training — targeting <strong>CVPR 2027</strong>.</p>
-        </div>
-      </article>
-
-      <!-- Joint generation -->
-      <article class="proj-row">
-        <div class="proj-media">
-          <img src="assets/media/sweep_grid_boxes_10_0p5_v2.png" alt="Joint generation" loading="lazy"/>
-        </div>
-        <div class="proj-details">
-          <p class="proj-tag"><img src="assets/media/mbzuai_logo_raster.png" alt="" class="ilogo"/> MBZUAI · Mar 2026 – Present</p>
-          <h3>Dual diffusion conditional generation</h3>
-          <p>
-            Investigating dual diffusion generation with additional 2D/3D conditioning to enhance overall
-            video/image quality and structural consistency (e.g., correct object presence with layout generation).
-          </p>
-          <p>WIP :)</p>
-          <!-- <div class="plinks"><a href="https://daromog.github.io/KineMask/" target="_blank" rel="noreferrer">[Project page]</a> <a href="https://arxiv.org/abs/2510.02284" target="_blank" rel="noreferrer">[arXiv]</a></div> -->
-        </div>
-      </article>
+<section aria-labelledby="news-heading" class="content-section compact-section" id="news">
+<h2 class="section-title" id="news-heading">Recent updates</h2>
+<ul class="news-list">
+<li><span class="nd">Nov 2026</span><span><a href="#r3-cache">R³-Cache</a>, my first-author work on training-free diffusion acceleration, is <strong>submitted to CVPR 2027</strong>.</span></li>
+<li><span class="nd">Nov 2026</span><span>Incoming research intern in Prof. Hao Dong's MINT Lab at <strong>ELLIS Institute Finland &amp; Tampere University</strong>.</span></li>
+<li><span class="nd">2026</span><span><a href="#splinecache">SplineCache</a>, developed at Westlake University's AGI Lab, is <strong>under review at ICLR 2027</strong>.</span></li>
+<li><span class="nd">2026</span><span>Our paper <a href="#kinemask">Learning to Generate Rigid Body Interactions with Video Diffusion Models</a> appears at <strong>ECCV 2026</strong>.</span></li>
+</ul>
+</section>
+<section aria-labelledby="projects-heading" class="content-section" id="projects">
+<h2 class="section-title" id="projects-heading">Papers &amp; research projects</h2>
 
 
-      <!-- KineMask -->
-      <article class="proj-row">
-        <div class="proj-media">
-          <video autoplay muted loop playsinline poster="assets/media/kinemask_carrousel_milk_poster.png">
-            <source src="assets/media/kinemask_carrousel_milk_v2.mp4" type="video/mp4"/>
-          </video>
-          <!-- <img src="assets/media/kinemask_architecture_V2.png" alt="KineMask architecture" loading="lazy"/> -->
-        </div>
-        <div class="proj-details">
-          <p class="proj-tag"><img src="assets/media/mbzuai_logo_raster.png" alt="" class="ilogo"/> MBZUAI · Sep 2025 – Mar 2026</p>
-          <h3>KineMask: Physically Informed Video Diffusion for Rigid-Body Interactions</h3>
-          <p>Developed video diffusion models for physically plausible controllable interactions. Implemented and trained <strong>Wan2.2 5B</strong> and <strong>Cosmos-Transfer2 2B</strong> image-to-video pipelines with ControlNet; set up data curation, conditioning, mixed-precision multi-GPU training and evaluation. Results outperform strong baselines. Extends the KineMask framework — <strong>accepted to ECCV 2026</strong> (co-first author).</p>
-          <div class="plinks"><a href="https://daromog.github.io/KineMask/" target="_blank" rel="noreferrer">[Project page]</a> <a href="https://arxiv.org/abs/2510.02284" target="_blank" rel="noreferrer">[arXiv]</a></div>
-        </div>
-      </article>
+<article class="paper-card featured-paper" id="r3-cache"><button aria-controls="r3-cache-details" aria-expanded="false" aria-label="Expand details for r3-cache" class="paper-cover" type="button"><div class="cover-pair"><img alt="R³-Cache green bear example" loading="lazy" src="assets/media/research/r3-1-2.webp"/><img alt="R³-Cache bicycle example" loading="lazy" src="assets/media/research/r3-2-2.webp"/></div></button><div class="paper-info"><h3 class="paper-title">R³-Cache: Refresh, Reconstruct, Reuse for Efficient Diffusion Transformers</h3><p class="paper-authors"><strong>Viacheslav Iablochnikov</strong>, <a href="https://sen-mao.github.io/">Senmao Li</a>, <a href="https://mbzuai.ac.ae/study/faculty/fahad-khan/">Fahad Khan</a></p><div class="paper-venue"><span class="status">Submitted to CVPR 2027</span><span>First author · MBZUAI</span></div><p class="paper-summary">Training-free diffusion acceleration through coordinated refresh, error reconstruction, and reuse; 3.4–4.1× faster including decoding.</p><div class="plinks"><a href="assets/docs/Portfolio_Viacheslav_Iablochnikov.pdf#page=5">Portfolio · p. 5</a></div><details class="paper-details" id="r3-cache-details"><summary><span class="label-closed">Details &amp; results</span><span class="label-open">Hide details</span></summary><div class="details-body"><p>Partial computation can update a prediction for the whole image. R³-Cache combines full evaluations that refresh the prediction, sparse evaluations that measure and reconstruct its error, and intervening steps that reuse the correction. Look-ahead sampling and an offline search coordinate these actions without retraining the model.</p><p><strong>My contribution:</strong> I lead the research direction, method development, implementation, and cross-model evaluation. Across SD3, SD3.5, and Qwen-Image, the method delivers <strong>3.4–4.1× acceleration, including decoding</strong>, with up to <strong>75.3% lower LPIPS distance to full sampling</strong> than native fewer-step sampling at comparable runtime.</p><figure class="comparison-figure">
+<div aria-label="R³-Cache four-method image comparison; scroll horizontally on narrow screens" class="comparison-scroll" role="region" tabindex="0">
+<div class="comparison-grid four-columns">
+<div class="comparison-label">Full sampler<span>50 steps</span></div><div class="comparison-label ours">R³-Cache<span>(ours)</span></div><div class="comparison-label">PoSTCache<span>target-10 comparison</span></div><div class="comparison-label">Native<span>10 steps</span></div>
+<img alt="Full sampler: a bird beside a green bear" height="640" loading="lazy" src="assets/media/research/r3-1-1.webp" width="640"/><img alt="R³-Cache: a bird beside a green bear, retaining the reference composition" height="640" loading="lazy" src="assets/media/research/r3-1-2.webp" width="640"/><img alt="PoSTCache output for the same green-bear prompt and noise" height="640" loading="lazy" src="assets/media/research/r3-1-3.webp" width="640"/><img alt="Native 10-step output for the same green-bear prompt and noise" height="640" loading="lazy" src="assets/media/research/r3-1-4.webp" width="640"/>
+<img alt="Full sampler: a yellow bicycle beside a red motorcycle" height="640" loading="lazy" src="assets/media/research/r3-2-1.webp" width="640"/><img alt="R³-Cache: a yellow bicycle beside a red motorcycle, retaining the reference composition" height="640" loading="lazy" src="assets/media/research/r3-2-2.webp" width="640"/><img alt="PoSTCache output for the same bicycle and motorcycle prompt and noise" height="640" loading="lazy" src="assets/media/research/r3-2-3.webp" width="640"/><img alt="Native 10-step output for the same bicycle and motorcycle prompt and noise" height="640" loading="lazy" src="assets/media/research/r3-2-4.webp" width="640"/>
+</div>
+</div>
+<figcaption>Selected Qwen-Image outputs with the same prompt and initial noise across each row. The comparison illustrates preservation of the full sampler's appearance.</figcaption>
+<p class="scroll-hint">Swipe or scroll to compare all four methods.</p>
+</figure></div></details></div></article>
+<article class="paper-card featured-paper" id="splinecache"><button aria-controls="splinecache-details" aria-expanded="false" aria-label="Expand details for splinecache" class="paper-cover" type="button"><img alt="SplineCache comparison preview" loading="lazy" src="assets/media/research/splinecache_comparison.webp"/></button><div class="paper-info"><h3 class="paper-title">SplineCache: Anchor-Constrained Interval Control for Efficient Diffusion Sampling</h3><p class="paper-authors"><strong>Viacheslav Iablochnikov</strong>, Tong Zhao, <a href="https://icoz69.github.io/">Chi Zhang</a></p><div class="paper-venue"><span class="status">Under review at ICLR 2027</span><span>First author · Westlake AGI Lab</span></div><p class="paper-summary">Spline-based interval control for diffusion sampling: 17 network calls instead of 50, with a 2.84× speedup on Qwen-Image.</p><div class="plinks"><a href="https://drive.google.com/file/d/1-Jl56wagf72pipK_ZtBhBZCUA1gjrkRy/view?usp=sharing">Paper</a><a href="assets/docs/Portfolio_Viacheslav_Iablochnikov.pdf#page=3">Portfolio · p. 3</a></div><details class="paper-details" id="splinecache-details"><summary><span class="label-closed">Details &amp; results</span><span class="label-open">Hide details</span></summary><div class="details-body"><p>A sampling step depends on velocity accumulated over an interval. SplineCache constructs a causal spline from completed model evaluations and integrates it to advance through skipped evaluations. Budget-specific anchor schedules determine where full evaluations are most useful.</p><p><strong>My contribution:</strong> I developed the interval-control formulation, sampling algorithm, schedule search, and evaluation pipeline. On Qwen-Image, <strong>17 network calls instead of 50</strong> deliver a <strong>2.84× speedup</strong>; a more aggressive setting reaches <strong>4.72×</strong>. The work also studies transfer to image-conditioned 3D generation.</p><figure class="comparison-figure medium-figure">
+<div aria-label="SplineCache three-method comparison; scroll horizontally on narrow screens" class="comparison-scroll" role="region" tabindex="0">
+<div class="three-column-labels"><div class="comparison-label">Full sampler</div><div class="comparison-label ours">SplineCache (ours)</div><div class="comparison-label">TeaCache</div></div>
+<img alt="Three matched Qwen-Image examples: full sampling, SplineCache and TeaCache; a giraffe, scissors, and a figure in a landscape" class="comparison-image" height="552" loading="lazy" src="assets/media/research/splinecache_comparison.webp" width="970"/>
+</div>
+<figcaption>Matched prompts and seeds. Columns show the full sampler, SplineCache, and TeaCache.</figcaption>
+</figure></div></details></div></article>
 
-      <!-- DiT acceleration -->
-      <article class="proj-row">
-        <div class="proj-media">
-          <!-- <img src="assets/media/bottleneck_sampling.png" alt="Bottleneck sampling" loading="lazy"/> -->
-          <img src="assets/media/r3_acc_v2.png" alt="Bottleneck sampling" loading="lazy"/>
-        </div>
-        <div class="proj-details">
-          <p class="proj-tag"><img src="assets/media/mbzuai_logo_raster.png" alt="" class="ilogo"/> MBZUAI · Abu Dhabi, UAE · Jan 2025 – Present</p>
-          <h3>Training-Free Acceleration of Transformer Diffusion Models (DiT / MMDiT)</h3>
-          <p>Collaboration with <a href="https://mbzuai.ac.ae/study/faculty/fahad-khan/" target="_blank" rel="noreferrer">Fahad Khan</a> and <a href="https://sites.google.com/view/senmaoli" target="_blank" rel="noreferrer">Senmao Li</a> (PhD). Profiling computational bottlenecks in <strong>DiT and MMDiT</strong> architectures and developing caching and tensor-decomposition methods for efficient feature reconstruction, token reduction, and training-free low-dimensional execution — targeting <strong>CVPR 2027</strong>.</p>
-        </div>
-      </article>
-
-      <h3 class="proj-group-title">Earlier Projects &amp; Internships</h3>
-
-      <!-- DreamBooth Lumina2 -->
-      <article class="proj-row">
-        <div class="proj-media">
-          <!-- <img src="assets/media/issai_example_1.png" alt="Lumina2 fine-tuning sample" loading="lazy"/> -->
-          <img src="assets/media/issai_example_2.png" alt="ISSAI example 2" loading="lazy"/>
-        </div>
-        <div class="proj-details">
-          <p class="proj-tag">Independent Project · 2025</p>
-          <h3>DreamBooth Lumina2 Training with SingLoRA via MeanFlow</h3>
-          <p>DreamBooth-style Lumina2 fine-tuning combining <strong>SingLoRA</strong> (compact LoRA replacement), <strong>MeanFlow</strong> (stable one-step sampling), and dispersive regularization (reduces mode collapse). Optimized for single- and multi-GPU setups. Reduces VRAM and iteration time while maintaining sample quality and diversity.</p>
-          <div class="plinks"><a href="https://github.com/slava-qw/Improved_DreamBooth/tree/main" target="_blank" rel="noreferrer">[GitHub]</a></div>
-        </div>
-      </article>
-
-      <!-- ISSAI -->
-      <article class="proj-row">
-        <div class="proj-media">
-          <img src="assets/media/issai_example_1.png" alt="ISSAI example 1" loading="lazy"/>
-          <!-- <img src="assets/media/issai_example_2.png" alt="ISSAI example 2" loading="lazy"/> -->
-        </div>
-        <div class="proj-details">
-          <p class="proj-tag"><img src="assets/media/issai_logo_raster.png" alt="" class="ilogo"/> ISSAI, Nazarbayev University · Jun–Aug 2025</p>
-          <h3>Culturally Aware Text-to-Image Generation for Kazakh Imagery</h3>
-          <p>Advised by <a href="https://issai.nu.edu.kz/2025/02/20/nartay-aikyn/" target="_blank" rel="noreferrer">Nartay Aikyn</a>. Optimized the text-to-image generation component of <a href="https://oylan.nu.edu.kz/" target="_blank" rel="noreferrer">OYLAN2</a> for culturally faithful Kazakh imagery from multilingual prompts. Curated a targeted prompt–image corpus and trained LoRAs with <code>diffusers</code>. Full fine-tuning of Lumina achieved best multi-concept Gemini mean score of <strong>88.29</strong> (up from 53.60 base — 65% relative gain).</p>
-        </div>
-      </article>
-
-      <!-- DiffDiff -->
-      <article class="proj-row">
-        <div class="proj-media">
-          <!-- <img src="assets/media/DiffDiff_result_example.png" alt="DiffDiff results" loading="lazy"/> -->
-          <!-- <img src="assets/media/unet_v2.png" alt="DiffDiff U-Net" loading="lazy"/> -->
-          <img src="assets/media/DiffDiff_result_2_example.png" alt="DiffDiff method" loading="lazy"/>
-        </div>
-        <div class="proj-details">
-          <p class="proj-tag"><img src="assets/media/hse_mark.png" alt="" class="ilogo"/> HSE University · Bachelor Thesis 2024–2025</p>
-          <h3>DiffDiff: Diffusion Models for Astronomical Image Differencing</h3>
-          <p>End-to-end pipeline for discovering transient events from sky survey images using a conditional diffusion model (U-Net + DDPM) for difference-image generation. Produces clean difference images for flux and coordinate estimation with uncertainty calibration. Achieves <strong>5.6× speedup</strong> over the existing pipeline and up to <strong>93% detection accuracy</strong>.</p>
-          <div class="plinks"><a href="https://github.com/slava-qw/DiffDiff/tree/main" target="_blank" rel="noreferrer">[GitHub]</a></div>
-        </div>
-      </article>
-
-      <!-- VK adversarial -->
-      <article class="proj-row">
-        <div class="proj-media">
-          <!-- <img src="assets/media/arc_attacks.png" alt="Attack pipeline" loading="lazy"/> -->
-          <img src="assets/media/adversarial_attacks_example_v3.png" alt="Patch example" loading="lazy"/>
-        </div>
-        <div class="proj-details">
-          <p class="proj-tag"><img src="assets/media/vk_logo_raster.png" alt="" class="ilogo ilogo-circle"/> VK Company · Apr–Oct 2024</p>
-          <h3>Adversarial Attacks on Multimodal Models</h3>
-          <p>Advised by <a href="https://scholar.google.com/citations?hl=ru&user=FcPMTJ4AAAAJ&view_op=list_works&sortby=pubdate" target="_blank" rel="noreferrer">Alexander Rogachev</a>. Adversarial attacks on multimodal systems for image retrieval and VLM pipelines. Implemented and verified patch attacks for CLIP, LLaVA-family, and video retrieval using LLaVA-OneVision. Proposed new attack variants reaching up to <strong>86% success rate</strong> in forcing restricted content generation. Main author of the resulting paper.</p>
-          <div class="plinks"><a href="https://arxiv.org/abs/2412.01725" target="_blank" rel="noreferrer">[arXiv:2412.01725]</a></div>
-        </div>
-      </article>
-
-      <!-- AIRI face swap -->
-      <article class="proj-row">
-        <div class="proj-media">
-          <img src="assets/media/face_swap_example.png" alt="Face swap results" loading="lazy"/>
-        </div>
-        <div class="proj-details">
-          <p class="proj-tag"><img src="assets/media/airi_logo_raster.png" alt="" class="ilogo"/> GenAI Lab, AIRI &amp; HSE · Oct 2024 – May 2025</p>
-          <h3>Face and Hair Swapping with Generative Models</h3>
-          <p>Advised by <a href="https://scholar.google.com/citations?user=MXJTRGoAAAAJ&hl=en" target="_blank" rel="noreferrer">Aibek Alanov</a>. Identity-preserving face and hair swapping building on StyleGAN2 and MegaFS GAN baselines. Introduced attention mechanisms and rotary encodings in the FS+ latent space, cutting <strong>LPIPS by 40%</strong> and <strong>FID@1k by 87%</strong> compared with baselines.</p>
-        </div>
-      </article>
-    </section>
-
-    <!-- HONORS -->
-    <section id="awards" class="content-section">
-      <div class="two-col-wide">
-        <div class="tc-left">
-          <h2 class="section-title">Honors &amp; Awards</h2>
-          <ul class="honors-list">
-            <li><span class="hy">2025–27</span><span>MBZUAI M.Sc. Scholarship — competitive, both years.</span></li>
-            <li><span class="hy">2025</span><span>Prize-winner, DL University Olympiad at Skoltech (top 3 / ~1,000).</span></li>
-            <li><span class="hy">2024</span><span>Prize-winner, DL University Olympiad at MIPT (top 10 / 300).</span></li>
-            <li><span class="hy">2021–25</span><span>HSE Excellence Scholarship — competitive, all four B.Sc. years.</span></li>
-            <li><span class="hy">2018</span><span>Bronze Medal, International Experimental Physics Olympiad (IEPhO).</span></li>
-          </ul>
-
-          <h2 class="section-title mt2">Talks &amp; Service</h2>
-          <ul class="honors-list">
-            <li><span class="hy">2026–</span><span>Mentor undergraduate students on publication-oriented research in generative modeling &amp; computer vision.</span></li>
-            <li><span class="hy">2026</span><span>Selected attendee: <a href="https://www.ellismunich.ai/summer-school/index.html" target="_blank" rel="noreferrer">ELLIS Summer School on ML &amp; CV</a> (TUM); <a href="https://dl4sci-school.lbl.gov/" target="_blank" rel="noreferrer">UC Berkeley DL4Sci</a> (top 30% acceptance); <a href="https://www.oxfordml.school/" target="_blank" rel="noreferrer">OxML / AI4GG</a> (Oxford).</span></li>
-            <li><span class="hy">2026</span><span>Selected attendee: <a href="https://www.automlschool.org/" target="_blank" rel="noreferrer">ELLIS AutoML Summer School</a> (Dortmund); MBZUAI ML Winter School; MSRNE Generative Modeling &amp; Sampling Workshop.</span></li>
-            <li><span class="hy">2026</span><span>Selected for the <a href="https://mbzuai.ac.ae/news/mbzuai-and-aws-collaborate-to-drive-research-skills-and-innovation-in-ai/" target="_blank" rel="noreferrer">MBZUAI × AWS Training Program</a> — pathway toward <a href="https://aws.amazon.com/certification/certified-generative-ai-developer-professional/" target="_blank" rel="noreferrer">AWS Certified Generative AI Developer – Professional</a>.</span></li>
-            <li><span class="hy">2026</span><span>Course listener: MIT 6.S184 (Generative AI with SDEs), Stanford CME296 (Diffusion &amp; Large Vision Models), KAIST CS492(C) (Diffusion &amp; Flow Models).</span></li>
-            <li><span class="hy">2025</span><span>Invited for SMILES-2025 summer school, Harbin Institute of Technology, China.</span></li>
-            <li><span class="hy">2024</span><span>Poster at AIRI Summer School (top 50 / 1,100).</span></li>
-            <li><span class="hy">2025–</span><span>Member, "Embodied Perception" reading group, MBZUAI.</span></li>
-            <li><span class="hy">2024</span><span>Lecture talks: D3PM, FlashAttention 1&amp;2, pose estimation (PoseBH), visual reasoning (Corvid).</span></li>
-            <li><span class="hy">2023–24</span><span>Teaching Assistant, HSE: Algorithms &amp; DS; Deep Learning.</span></li>
-          </ul>
-        </div>
-
-        <div class="tc-right">
-          <h2 class="section-title">Education</h2>
-
-          <div class="edu-block">
-            <div class="edu-logo"><img src="assets/media/mbzuai_logo_v2.png" alt="MBZUAI"/></div>
-            <div>
-              <p><strong>M.Sc. in Computer Vision</strong> &nbsp;·&nbsp; GPA: 3.73/4.00</p>
-              <p class="muted">Mohamed bin Zayed University of AI · Abu Dhabi, UAE</p>
-              <p class="muted">Aug 2025 – Jun 2027 (expected) · Supervisor: Ivan Laptev</p>
-              <p class="muted"><em>PhD courses:</em> Advanced ML (<a href="https://mbzuai.ac.ae/study/faculty/professor-eric-moulines/" target="_blank" rel="noreferrer">Moulines</a>), Parallel ML Systems (<a href="https://mbzuai.ac.ae/study/faculty/qirong-ho/" target="_blank" rel="noreferrer">Ho</a>), Sequential Decision Making (<a href="https://mbzuai.ac.ae/study/faculty/salem-lahlou/" target="_blank" rel="noreferrer">Lahlou</a>), Vision &amp; Language (<a href="https://mbzuai.ac.ae/study/faculty/ivan-laptev/" target="_blank" rel="noreferrer">Laptev</a>).</p>
-            </div>
-          </div>
-
-          <div class="edu-block">
-            <div class="edu-logo"><img src="assets/media/hse_logo_full.png" alt="HSE"/></div>
-            <div>
-              <p><strong>B.Sc. in Physics</strong> &nbsp;·&nbsp; GPA: 8.33/10</p>
-              <p class="muted">Higher School of Economics · Moscow, Russia · Sep 2021 – Jun 2025</p>
-              <p class="muted"><em>Thesis:</em> Diffusion models for astronomical image differencing.</p>
-            </div>
-          </div>
-
-          <h2 class="section-title mt2">Technical Skills</h2>
-          <table class="skills-tbl">
-            <tr><td><strong>Generative&nbsp;AI</strong></td><td>Diffusion &amp; flow models, image/video generation, text-to-image adaptation, VLMs, ControlNet, LoRA/PEFT, DreamBooth, MeanFlow, reward-aligned &amp; rare-event sampling</td></tr>
-            <tr><td><strong>ML&nbsp;Frameworks</strong></td><td>PyTorch, Torch Profiler, diffusers, transformers, PEFT, JAX/Flax, Triton, DeepSpeed, accelerate, Megatron, XGBoost</td></tr>
-            <tr><td><strong>Systems</strong></td><td>Linux, CUDA, Git, Docker, SLURM, Kubernetes, PySpark, MLflow, DVC</td></tr>
-            <tr><td><strong>Programming</strong></td><td>Python, NumPy, SciPy, Pandas, SQL, SQLite, MongoDB, Flask, FastAPI</td></tr>
-            <tr><td><strong>Languages</strong></td><td>English (C1), German (A2), Russian (native)</td></tr>
-          </table>
-        </div>
-      </div>
-    </section>
-
-    <footer class="site-footer">
-      <p>
-        © <span id="yr"></span> Viacheslav Iablochnikov &nbsp;·&nbsp;
-        <!-- Design inspired by <a href="https://anyirao.com/" target="_blank" rel="noreferrer">anyirao.com</a> and -->
-        <!-- <a href="https://myownskyw7.github.io/" target="_blank" rel="noreferrer">myownskyw7.github.io</a> &nbsp;·&nbsp; -->
-        <a href="mailto:slavawertlon@gmail.com">slavawertlon@gmail.com</a>
-      </p>
-    </footer>
-  </div><!-- /page-wrap -->
-
-  <script>
-    document.getElementById('yr').textContent = new Date().getFullYear();
-    const burger = document.getElementById('burger');
-    const menu = document.getElementById('mobileMenu');
-    burger.addEventListener('click', () => menu.classList.toggle('open'));
-    menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => menu.classList.remove('open')));
-  </script>
+<article class="paper-card featured-paper" id="kinemask"><button aria-controls="kinemask-details" aria-expanded="false" aria-label="Expand details for kinemask" class="paper-cover" type="button"><img alt="KineMask interaction examples" loading="lazy" src="assets/media/kinemask_carrousel_milk_poster.png"/></button><div class="paper-info"><h3 class="paper-title">KineMask: Learning to Generate Rigid Body Interactions with Video Diffusion Models</h3><p class="paper-authors">David Romero, Ariana Bermudez, <strong>Viacheslav Iablochnikov</strong>, Hao Li, Fabio Pizzati, Ivan Laptev</p><div class="paper-venue"><span class="status">ECCV 2026</span><span>Co-author · MBZUAI</span></div><p class="paper-summary">Motion-conditioned video diffusion for rigid-body interactions, with Wan2.2 and Cosmos-Transfer2 image-to-video pipelines.</p><div class="plinks"><a href="https://arxiv.org/abs/2510.02284">Paper</a><a href="https://daromog.github.io/KineMask/">Project</a><a href="https://github.com/Daromog/KineMask">Code</a><a href="assets/docs/Portfolio_Viacheslav_Iablochnikov.pdf#page=2">Portfolio · p. 2</a></div><details class="paper-details" id="kinemask-details"><summary><span class="label-closed">Details &amp; results</span><span class="label-open">Hide details</span></summary><div class="details-body"><p>KineMask conditions video diffusion models on object motion to generate rigid-body interactions. A velocity-mask control signal specifies how an object starts moving, while the generator predicts the resulting motion and interactions.</p><p><strong>My contribution:</strong> I implemented and trained the Wan2.2 (5B) and Cosmos-Transfer2 image-to-video pipelines, covering data preparation, motion conditioning, multi-GPU training, inference, and evaluation. On Wan2.2, <strong>FVD decreases from 977.7 to 475.6</strong>; human raters prefer KineMask to the plain backbone in up to <strong>71%</strong> of comparisons.</p><figure class="video-figure"><video aria-label="KineMask motion-conditioned object-interaction video examples" autoplay="" controls="" loop="" muted="" playsinline="" poster="assets/media/kinemask_carrousel_milk_poster.png" preload="metadata"><source src="assets/media/kinemask_carrousel_milk_v2.mp4" type="video/mp4"/></video><figcaption>Motion-conditioned object-interaction examples from KineMask.</figcaption></figure><details class="additional-figure"><summary>Wan and Cosmos comparisons</summary><figure class="narrow-figure"><img alt="Input motion at left, plain Wan and Cosmos backbone outputs compared with KineMask at right" height="674" loading="lazy" src="assets/media/research/kinemask_comparison.webp" width="782"/><figcaption>Input and motion control at left; backbone and KineMask outputs at right.</figcaption></figure></details></div></details></div></article>
+<article class="paper-card featured-paper" id="beyond-hands"><button aria-controls="beyond-hands-details" aria-expanded="false" aria-label="Expand details for beyond-hands" class="paper-cover" type="button"><img alt="Joint image and hand generation preview" loading="lazy" src="assets/media/research/beyond_hands_examples.webp"/></button><div class="paper-info"><h3 class="paper-title">Beyond Hands: Joint Video, Hand, and Object Trajectory Generation for Human–Object Interaction</h3><p class="paper-authors">David Romero, <strong>Viacheslav Iablochnikov</strong>, Fabio Pizzati, Ivan Laptev</p><div class="paper-venue"><span class="status ongoing">Ongoing · targeting CVPR 2027</span><span>Co-author · MBZUAI</span></div><p class="paper-summary">Joint visual, 3D hand, and object-trajectory generation; my focus is the Cosmos/FLUX image–hand–object branch and aligned data.</p><div class="plinks"><a href="assets/docs/Portfolio_Viacheslav_Iablochnikov.pdf#page=4">Portfolio · p. 4</a></div><details class="paper-details" id="beyond-hands-details"><summary><span class="label-closed">Details &amp; results</span><span class="label-open">Hide details</span></summary><div class="details-body"><p>The project connects visual generation with the geometry of an interaction by jointly modelling video, 3D hands, and object trajectories. My image branch brings image latents, a parametric hand representation, and object position into a shared diffusion transformer, supporting joint generation and conditional prediction.</p><p><strong>My contribution:</strong> I built the image–hand–object branch on NVIDIA Cosmos and FLUX and prepared aligned training data. Joint generation with Cosmos achieves a closer perceptual match to reference images than the image-only control while retaining both joint and conditional generation.</p><figure class="comparison-figure medium-figure"><a aria-label="Open larger Beyond Hands examples" href="assets/media/research/beyond_hands_examples.webp"><img alt="Cosmos and FLUX generated interaction images with hand meshes and object-position overlays" height="715" loading="lazy" src="assets/media/research/beyond_hands_examples.webp" width="1165"/></a><figcaption>Generated interaction images with the generated hand meshes and object positions overlaid.</figcaption></figure></div></details></div></article>
+<article class="paper-card featured-paper" id="layoutfusion"><button aria-controls="layoutfusion-details" aria-expanded="false" aria-label="Expand details for layoutfusion" class="paper-cover" type="button"><img alt="LayoutFusion spatial placement preview" loading="lazy" src="assets/media/research/layoutfusion_placement.webp"/></button><div class="paper-info"><h3 class="paper-title">LayoutFusion: Dual 2D–3D Diffusion for High-Fidelity and Structurally Consistent Generation</h3><p class="paper-authors"><strong>Viacheslav Iablochnikov</strong>, Fabio Pizzati, Ivan Laptev</p><div class="paper-venue"><span class="status ongoing">Ongoing</span><span>First author · MBZUAI</span></div><p class="paper-summary">Coordinating pretrained image and layout diffusion models at inference time for explicit spatial control.</p><div class="plinks"><a href="assets/docs/Portfolio_Viacheslav_Iablochnikov.pdf#page=6">Portfolio · p. 6</a></div><details class="paper-details" id="layoutfusion-details"><summary><span class="label-closed">Details &amp; results</span><span class="label-open">Hide details</span></summary><div class="details-body"><p>LayoutFusion investigates how separately pretrained image and layout diffusion models can be coordinated at inference time. Compatibility objectives, guidance, and particle-based inference link explicit object placement with visual appearance without retraining the base generators.</p><p><strong>My contribution:</strong> I lead the formulation and development of the image–layout coupling, reward-guided sampling, and spatial-consistency evaluation. The illustrated 2D experiment places a cup in a requested region, making spatial control directly inspectable.</p><figure class="comparison-figure medium-figure"><div class="two-column-labels"><div class="comparison-label">Unguided generation</div><div class="comparison-label ours">Guided placement (ours)</div></div><a aria-label="Open larger LayoutFusion placement comparison" href="assets/media/research/layoutfusion_placement.webp"><img alt="Unguided and guided cup-placement outputs; the green box marks the requested region" height="696" loading="lazy" src="assets/media/research/layoutfusion_placement.webp" width="1404"/></a><figcaption>Selected 2D placement example. The green box marks the requested region; guidance brings the cup into it.</figcaption></figure></div></details></div></article>
+<article class="paper-card featured-paper" id="physalign"><button aria-controls="physalign-details" aria-expanded="false" aria-label="Expand details for physalign" class="paper-cover" type="button"><img alt="World-model representation diagram; conceptual illustration" loading="lazy" src="assets/media/vjepa_world_model.png"/></button><div class="paper-info"><h3 class="paper-title">PhysAlign: World-Model-Guided Inference-Time Alignment for Physically Plausible Video Generation</h3><p class="paper-authors"><strong>Viacheslav Iablochnikov</strong>, <a href="https://andrewluo.net/">Andrew Luo</a></p><div class="paper-venue"><span class="status ongoing">Ongoing</span><span>First author · HKU collaboration</span></div><p class="paper-summary">Using a learned world-model evaluator to guide pretrained video generators toward physically plausible motion.</p><details class="paper-details" id="physalign-details"><summary><span class="label-closed">Details &amp; results</span><span class="label-open">Hide details</span></summary><div class="details-body"><p>I investigate using a pretrained self-supervised world model as a learned evaluator to guide video generation toward physically plausible motion. The project studies reward-guided inference as a way to steer pretrained generators without retraining their weights, connecting physical feedback with probabilistic sampling.</p><p class="concept-note">The cover is a conceptual world-model diagram, rather than a generated result.</p></div></details></div></article>
+</section>
+<section aria-labelledby="earlier-heading" class="content-section" id="earlier-work">
+<h2 class="section-title" id="earlier-heading">Earlier papers &amp; projects</h2>
+<article class="paper-card"><div class="paper-thumb"><img alt="Patch-based adversarial attack example" height="95" loading="lazy" src="assets/media/adversarial_attacks_example_v2.png" width="130"/></div><div class="paper-info"><h3 class="paper-title">Attacks on multimodal models</h3><p class="paper-authors"><strong>V. Iablochnikov</strong>, A. Rogachev</p><p class="paper-venue">arXiv · First author</p><p>Patch attacks and their transfer across multimodal systems, including image retrieval and visual-language pipelines.</p><div class="plinks"><a href="https://arxiv.org/abs/2412.01725">Paper</a></div></div></article>
+<article class="paper-card"><div class="paper-thumb"><img alt="Discrete-diffusion iterative proportional fitting illustration" height="95" loading="lazy" src="assets/media/dipf.png" width="130"/></div><div class="paper-info"><h3 class="paper-title">Categorical Iterative Proportional Fitting via Discrete Diffusion Models</h3><p class="paper-authors">Nikita Ligostaev, Vladimir Latypov, <strong>Viacheslav Iablochnikov</strong>, Maria Nesterova, Ramil Khafizov, Sergei Kholkin, Alexander Korotin</p><p class="paper-venue">Preprint · Co-author</p><div class="plinks"><a href="https://box.skoltech.ru/index.php/s/LEeQhaRW6GYYuAa">Preprint</a></div></div></article>
+<article class="paper-card"><div class="paper-thumb"><img alt="Astronomical image-differencing pipeline" height="95" loading="lazy" src="assets/media/DiffDiff_result_2_example.png" width="130"/></div><div class="paper-info"><h3 class="paper-title">DiffDiff: Diffusion models for astronomical image differencing</h3><p class="paper-authors"><strong>Viacheslav Iablochnikov</strong></p><p class="paper-venue">B.Sc. thesis · HSE University, Physics</p><p>Conditional diffusion for astronomical difference-image generation and transient detection, connecting observational data with physically simulated examples.</p><div class="plinks"><a href="https://github.com/slava-qw/DiffDiff/tree/main">Code</a></div></div></article>
+<article class="paper-card"><div class="paper-thumb"><img alt="Text-to-image adaptation example" height="95" loading="lazy" src="assets/media/issai_example_2.png" width="130"/></div><div class="paper-info"><h3 class="paper-title">DreamBooth Lumina2 adaptation</h3><p>Experiments with parameter-efficient text-to-image adaptation, SingLoRA, and MeanFlow sampling, with code for single- and multi-GPU workflows.</p><div class="plinks"><a href="https://github.com/slava-qw/Improved_DreamBooth/tree/main">Code</a></div></div></article>
+</section>
+<section aria-labelledby="background-heading" class="content-section" id="background">
+<h2 class="section-title" id="background-heading">Background &amp; community</h2>
+<div class="two-col-wide">
+<div class="tc-left">
+<h3 class="subsection-title">Research experience</h3>
+<ul class="experience-list">
+<li><p class="experience-time">Incoming · November 2026</p><h4>ELLIS Institute Finland &amp; Tampere University</h4><p>Research internship in Prof. Hao Dong's MINT Lab.</p></li>
+<li><p class="experience-time">2025–present</p><h4>MBZUAI</h4><p>Visual generative modelling with Ivan Laptev and Fabio Pizzati; efficient inference with Fahad Khan and Senmao Li.</p></li>
+<li><p class="experience-time">Summer 2026</p><h4>Westlake University · AGI Lab</h4><p>Research internship with Chi Zhang, developing training-free diffusion acceleration and the first-author SplineCache project.</p></li>
+<li><p class="experience-time">2026–present</p><h4>University of Hong Kong</h4><p>Research collaboration with Andrew Luo on physical feedback for video generation.</p></li>
+<li><p class="experience-time">June–August 2025</p><h4>ISSAI · Nazarbayev University</h4><p>Text-to-image adaptation for culturally faithful Kazakh imagery in OYLAN2. Curated multilingual training data and trained LoRAs and full-model adaptations.</p></li>
+<li><p class="experience-time">October 2024–May 2025</p><h4>GenAI Lab · AIRI &amp; HSE</h4><p>Generative face and hair editing with GANs, attention mechanisms, and latent representations.</p></li>
+<li><p class="experience-time">April–October 2024</p><h4>VK Company</h4><p>Adversarial evaluation of multimodal models, leading to the first-author attacks paper.</p></li>
+</ul>
+</div>
+<div class="tc-right">
+<h3 class="subsection-title">Education</h3>
+<div class="edu-block"><div class="edu-logo"><img alt="MBZUAI" height="34" src="assets/media/mbzuai_logo_v2.png" width="78"/></div><div><h4>M.Sc. in Computer Vision</h4><p>MBZUAI · August 2025–June 2027 (expected)</p><p>GPA: 3.73/4.00</p><p class="muted">Thesis: Efficient and Structurally Consistent Visual Generation with Diffusion Models.</p></div></div>
+<div class="edu-block"><div class="edu-logo"><img alt="HSE University" height="34" src="assets/media/hse_logo_full.png" width="78"/></div><div><h4>B.Sc. in Physics</h4><p>HSE University · September 2021–June 2025</p><p>GPA: 8.33/10</p><p class="muted">Thesis: Diffusion models for astronomical image differencing.</p></div></div>
+<h3 class="subsection-title mt2">Teaching &amp; research community</h3>
+<p>I mentor undergraduate researchers in generative modelling and participate in MBZUAI's Embodied Perception reading group. Previously, I was a teaching assistant for Algorithms &amp; Data Structures and Deep Learning at HSE.</p>
+<p>In 2026, I attended research schools and workshops including the ELLIS schools on Machine Learning &amp; Computer Vision and AutoML, Berkeley DL4Sci, OxML / AI4GG, and the MSRNE Generative Modeling &amp; Sampling Workshop. I was also selected for the MBZUAI × AWS training program.</p>
+<h3 class="subsection-title mt2">Selected honors</h3>
+<ul class="plain-list"><li>MBZUAI M.Sc. scholarship, 2025–2027.</li><li>HSE scholarship for all four B.Sc. years, 2021–2025.</li><li>Prize-winner, Deep Learning University Olympiads: top 3 of approximately 1,000 (2025), top 10 of 300 (2024).</li><li>Bronze medal, International Experimental Physics Olympiad, 2018.</li></ul>
+<h3 class="subsection-title mt2">Technical focus</h3><p>Python, PyTorch, diffusion and flow models, numerical sampling, inference-time guidance, GPU experimentation, and reproducible evaluation.</p>
+</div>
+</div>
+</section>
+<footer class="site-footer"><p>© <span id="yr">2026</span> Viacheslav Iablochnikov · <a href="mailto:slavawertlon@gmail.com">slavawertlon@gmail.com</a></p><p>Last updated: November 2026</p></footer>
+</main>
 </body>
 </html>
