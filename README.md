@@ -42,10 +42,10 @@ has 10 steps; the full reference has 50. Do not relabel these images as a
 different experimental configuration. Preserve complete frames and their
 aspect ratios. On narrow screens, comparisons scroll horizontally.
 
-The CV download is an unchanged copy of the latest supplied document. Its
-R³-Cache entry still says "targeting"; the website and portfolio use the newer
-applicant-confirmed "Submitted to CVPR 2027" status. Reconcile the CV separately
-when updating the CV if complete consistency is needed.
+The CV and portfolio downloads are unchanged copies of the supplied documents.
+The website presents R³-Cache and Beyond Hands as "arXiv preprint coming soon"
+at the author's request. Downloadable documents retain their existing wording;
+update those separately when revising the documents.
 
 ## Revision records
 
