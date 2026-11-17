@@ -42,10 +42,16 @@ has 10 steps; the full reference has 50. Do not relabel these images as a
 different experimental configuration. Preserve complete frames and their
 aspect ratios. On narrow screens, comparisons scroll horizontally.
 
-The CV and portfolio downloads are unchanged copies of the supplied documents.
-The website presents R³-Cache and Beyond Hands as "arXiv preprint coming soon"
-at the author's request. Downloadable documents retain their existing wording;
-update those separately when revising the documents.
+The CV and portfolio downloads were rebuilt from the supplied LaTeX sources on
+17 November 2026. They use the updated HOIDirector title and author list and
+present HOIDirector and R³-Cache as "arXiv preprint coming soon", matching the
+website. ICLR review wording is preserved. The stable `beyond-hands` anchor now
+identifies HOIDirector so existing links continue to work.
+
+The authoritative CV source is
+`F:/use_this_one_Viacheslav_Iablochnikov_CV_improved (1).tex`.
+Editable document sources, build instructions, prior versions and visual checks
+are at `D:/beyound_hands/output/pdf/research_documents_updated_20261117/`.
 
 ## Revision records
 
